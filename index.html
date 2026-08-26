@@ -6,352 +6,244 @@
     <meta name="description" content="2Q-PHỞ ベトナム料理店 フォー｜Nhà hàng Việt Nam tại Numazu, Shizuoka">
     <title>2Q-PHỞ｜ベトナム料理店 フォー</title>
 
-    <!-- FONT -->
+    <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;500;600;700&family=Noto+Serif:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- ICONS (FontAwesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- TOP BAR -->
-<div class="top-bar">
-    <div>本場ベトナムの味を、沼津で。</div>
-    <div>静岡県沼津市</div>
-</div>
-
 <!-- HEADER -->
 <header class="header" id="header">
-    <!-- LOGO (NÚT HOME) -->
-    <a href="#home" class="logo">
-        <div class="logo-mark">
-            <span>2Q</span>
-        </div>
-        <div class="logo-text">
-            <strong>2Q-PHỞ</strong>
-            <small>ベトナム料理店 フォー</small>
-        </div>
-    </a>
+    <div class="header-container">
+        <!-- LOGO (NÚT HOME) -->
+        <a href="#home" class="logo">
+            <div class="logo-mark"><span>2Q</span></div>
+            <div class="logo-text">
+                <strong>2Q-PHỞ</strong>
+                <small>ベトナム料理店 フォー</small>
+            </div>
+        </a>
 
-    <!-- MOBILE BUTTON -->
-    <button class="menu-toggle" id="menuToggle" aria-label="Menu">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
+        <!-- NAVIGATION -->
+        <nav class="navigation" id="navigation">
+            <a href="#home">TRANG CHỦ</a>
+            <a href="#about">GIỚI THIỆU</a>
+            <a href="#menu">THỰC ĐƠN</a>
+            <a href="#features">VÌ SAO CHỌN</a>
+            <a href="#contact">LIÊN HỆ</a>
+        </nav>
 
-    <!-- NAVIGATION -->
-    <nav class="navigation" id="navigation">
-        <a href="#home">TRANG CHỦ</a>
-        <a href="#about">GIỚI THIỆU</a>
-        <a href="#menu">THỰC ĐƠN</a>
-        <a href="#space">KHÔNG GIAN</a>
-        <a href="#contact">LIÊN HỆ</a>
-        <a href="#reservation" class="nav-reservation">ĐẶT BÀN</a>
-    </nav>
+        <div class="header-actions">
+            <a href="#reservation" class="btn btn-gold nav-btn">ĐẶT BÀN</a>
+            <button class="menu-toggle" id="menuToggle"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </div>
 </header>
 
 <main>
 
-<!-- HERO -->
+<!-- HERO SECTION -->
 <section class="hero" id="home">
-    <div class="hero-content">
-        <p class="hero-label">AUTHENTIC VIETNAMESE CUISINE</p>
-        <h1>HƯƠNG VỊ<br><span>VIỆT NAM</span></h1>
-        <p class="hero-japanese">本場のベトナム料理を、心を込めて。</p>
-        <p class="hero-description">
-            Từ những tô phở nóng hổi, bánh mì giòn thơm đến những món ăn mang đậm hương vị quê nhà.<br>
-            2Q-PHỞ mang một phần Việt Nam đến Numazu, Shizuoka.
-        </p>
-        <div class="hero-buttons">
-            <a href="#menu" class="btn btn-gold">XEM THỰC ĐƠN <span>→</span></a>
-            <a href="#contact" class="btn btn-outline">LIÊN HỆ <span>→</span></a>
+    <div class="hero-container">
+        <div class="hero-text">
+            <h1>HƯƠNG VỊ VIỆT<br><span>TRỌN VẸN TẠI NHẬT</span></h1>
+            <p class="hero-jp">本場のベトナムの味を。日本で。</p>
+            <p class="hero-desc">2Q-PHỞ mang đến hương vị Việt Nam<br>chân thật và tinh tế nhất giữa lòng Nhật Bản.</p>
+            <a href="#reservation" class="btn btn-gold">ĐẶT BÀN NGAY <i class="fa-solid fa-arrow-right"></i></a>
         </div>
-    </div>
-    <div class="hero-scroll">
-        <span>SCROLL</span>
-        <i></i>
-    </div>
-</section>
-
-<!-- INFO BAR -->
-<section class="info-bar">
-    <div class="info-item">
-        <div class="info-icon">◇</div>
-        <div>
-            <small>LOCATION</small>
-            <p>沼津市・静岡県</p>
+        <div class="hero-image">
+            <!-- Ở đây bạn dùng một ảnh tô phở đã tách nền (PNG) sẽ rất đẹp -->
+            <img src="images/hero-pho.png" alt="Tô phở Việt Nam" onerror="this.src='images/hero.jpg'">
         </div>
-    </div>
-    <div class="info-item">
-        <div class="info-icon">◷</div>
-        <div>
-            <small>OPENING HOURS</small>
-            <p>T2, T4-CN: 11:00-15:00 / 17:00-21:00<br>Thứ 3: 17:00-21:00</p>
-        </div>
-    </div>
-    <div class="info-item">
-        <div class="info-icon">♡</div>
-        <div>
-            <small>FOLLOW US</small>
-            <p>TikTok / Facebook</p>
-        </div>
-    </div>
-</section>
-
-<!-- FEATURED MENU -->
-<section class="section highlight-section">
-    <div class="section-heading">
-        <p class="section-label">おすすめ</p>
-        <h2>MÓN NGON <span>NỔI BẬT</span></h2>
-        <p>Những món ăn được yêu thích tại 2Q-PHỞ</p>
     </div>
 
-    <div class="featured-grid">
-        <!-- ITEM 1 -->
-        <article class="featured-card">
-            <div class="featured-image">
-                <img src="images/pho-bo-tai.jpg" alt="Phở bò tái" loading="lazy">
-                <span>人気</span>
+    <!-- FLOATING INFO BAR -->
+    <div class="floating-info">
+        <div class="f-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+                <p>〒410-0801 Shizuoka, Numazu-shi,</p>
+                <p>Otemachi 5-4-24</p>
             </div>
-            <div class="featured-content">
-                <h3>PHỞ BÒ TÁI</h3>
+        </div>
+        <div class="f-item">
+            <i class="fa-regular fa-clock"></i>
+            <div>
+                <p>11:00 - 15:00 / 17:00 - 21:00</p>
+                <p>(Nghỉ trưa Thứ 3)</p>
+            </div>
+        </div>
+        <div class="f-item">
+            <i class="fa-regular fa-envelope"></i>
+            <div>
+                <p>2qphonumazu@gmail.com</p>
+            </div>
+        </div>
+        <div class="f-socials">
+            <a href="https://www.facebook.com/2qphonumazu" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.tiktok.com/@2qpho" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+    </div>
+</section>
+
+<!-- FEATURED MENU (SLIDER) -->
+<section class="featured-menu" id="menu">
+    <div class="section-title">
+        <div class="ornament"><i class="fa-solid fa-seedling"></i></div>
+        <h2>MÓN NGON NỔI BẬT</h2>
+        <p>おすすめメニュー</p>
+    </div>
+
+    <div class="slider-container">
+        <button class="slider-btn left" id="slideLeft"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="slider-wrapper" id="sliderWrapper">
+            <!-- Món 1 -->
+            <div class="menu-card">
+                <img src="images/pho-bo-tai.jpg" alt="Phở Bò Tái">
+                <h3>Phở Bò Tái</h3>
                 <p>フォー・ボー・タイ</p>
                 <strong>¥980</strong>
             </div>
-        </article>
-        <!-- ITEM 2 -->
-        <article class="featured-card">
-            <div class="featured-image">
-                <img src="images/bun-bo-hue.jpg" alt="Bún bò Huế" loading="lazy">
-                <span>人気</span>
-            </div>
-            <div class="featured-content">
-                <h3>BÚN BÒ HUẾ</h3>
-                <p>ブン・ボー・フエ</p>
+            <!-- Món 2 -->
+            <div class="menu-card">
+                <div class="badge">人气</div>
+                <img src="images/bun-bo-hue.jpg" alt="Bún Bò Huế">
+                <h3>Bún Bò Huế</h3>
+                <p>ブンボーフエ</p>
                 <strong>¥1,080</strong>
             </div>
-        </article>
-        <!-- ITEM 3 -->
-        <article class="featured-card">
-            <div class="featured-image">
-                <img src="images/banh-mi-thap-cam.jpg" alt="Bánh mì thập cẩm" loading="lazy">
-                <span>おすすめ</span>
-            </div>
-            <div class="featured-content">
-                <h3>BÁNH MÌ THẬP CẨM</h3>
+            <!-- Món 3 -->
+            <div class="menu-card">
+                <img src="images/banh-mi-thap-cam.jpg" alt="Bánh Mì Đặc Biệt">
+                <h3>Bánh Mì Đặc Biệt</h3>
                 <p>バインミー・スペシャル</p>
                 <strong>¥800</strong>
             </div>
-        </article>
-        <!-- ITEM 4 -->
-        <article class="featured-card">
-            <div class="featured-image">
-                <img src="images/goi-cuon-tom-thit-3-cai.jpg" alt="Gỏi cuốn" loading="lazy">
-            </div>
-            <div class="featured-content">
-                <h3>GỎI CUỐN</h3>
-                <p>生春巻き 3本</p>
+            <!-- Món 4 -->
+            <div class="menu-card">
+                <img src="images/goi-cuon-tom-thit-3-cai.jpg" alt="Gỏi Cuốn">
+                <h3>Gỏi Cuốn</h3>
+                <p>生春巻き</p>
                 <strong>¥750</strong>
             </div>
-        </article>
+        </div>
+        <button class="slider-btn right" id="slideRight"><i class="fa-solid fa-chevron-right"></i></button>
     </div>
-    <div class="center-button">
-        <a href="#menu" class="btn btn-outline-dark">XEM TOÀN BỘ MENU <span>→</span></a>
+
+    <div class="center-btn">
+        <a href="#menu" class="btn btn-outline">XEM TOÀN BỘ THỰC ĐƠN <i class="fa-solid fa-arrow-right"></i></a>
     </div>
 </section>
 
-<!-- ABOUT -->
+<!-- ABOUT SECTION (LAYOUT 3 ẢNH) -->
 <section class="about-section" id="about">
-    <div class="about-content">
-        <p class="section-label">ABOUT 2Q-PHỞ</p>
-        <h2>TÌNH YÊU<br><span>ẨM THỰC VIỆT</span></h2>
-        <div class="gold-line"></div>
-        <p class="about-description">Chúng tôi muốn mang đến cho thực khách tại Nhật những món ăn Việt Nam gần gũi, chân thật và đầy hương vị.</p>
-        <p class="about-description japanese">新鮮な食材と伝統の味を大切にし、ベトナムの食文化を日本のお客様にお届けします。</p>
-        <a href="#menu" class="text-link">KHÁM PHÁ MENU →</a>
-    </div>
-    <div class="about-gallery">
-        <div class="about-main-image"><img src="images/about.jpg" alt="2Q-PHỞ" loading="lazy"></div>
-        <div class="about-small-image"><img src="images/restaurant-front.jpg" alt="Mặt tiền 2Q-PHỞ" loading="lazy"></div>
+    <div class="about-container">
+        <div class="about-text">
+            <small>VỀ 2Q-PHỞ</small>
+            <h2>TÌNH YÊU ẨM THỰC VIỆT<br>TRONG TỪNG MÓN ĂN</h2>
+            <div class="red-line"></div>
+            <p>Chúng tôi lựa chọn nguyên liệu tươi ngon nhất, kết hợp công thức truyền thống và sự tinh tế trong cách chế biến để mang đến cho bạn những trải nghiệm ẩm thực khó quên.</p>
+            <a href="#about" class="btn btn-outline">TÌM HIỂU THÊM <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="about-image-grid">
+            <div class="img-large"><img src="images/interior-01.jpg" alt="Không gian 1"></div>
+            <div class="img-small-top"><img src="images/restaurant-front.jpg" alt="Mặt tiền"></div>
+            <div class="img-small-bottom"><img src="images/interior-02.jpg" alt="Không gian 2"></div>
+        </div>
     </div>
 </section>
 
-<!-- WHY -->
-<section class="why-section">
-    <div class="section-heading">
-        <p class="section-label">私たちのこだわり</p>
-        <h2>CHẤT LƯỢNG <span>TỪ TÂM</span></h2>
+<!-- FEATURES SECTION (CÁC ICON) -->
+<section class="features-section" id="features">
+    <div class="section-title">
+        <div class="ornament"><i class="fa-solid fa-seedling"></i></div>
+        <h2>VÌ SAO CHỌN 2Q-PHỞ?</h2>
+        <p>私たちのこだわり</p>
     </div>
-    <div class="why-grid">
-        <article class="why-card">
-            <div class="why-number">01</div>
-            <h3>NGUYÊN LIỆU TƯƠI</h3>
-            <p>Lựa chọn nguyên liệu kỹ càng để giữ trọn vị ngon tự nhiên.</p>
-        </article>
-        <article class="why-card">
-            <div class="why-number">02</div>
-            <h3>HƯƠNG VỊ TRUYỀN THỐNG</h3>
-            <p>Tôn trọng công thức và hương vị truyền thống của món Việt.</p>
-        </article>
-        <article class="why-card">
-            <div class="why-number">03</div>
-            <h3>NẤU TẬN TÂM</h3>
-            <p>Mỗi món ăn được chuẩn bị cẩn thận trước khi phục vụ.</p>
-        </article>
-        <article class="why-card">
-            <div class="why-number">04</div>
-            <h3>PHỤC VỤ CHÂN THÀNH</h3>
-            <p>Mang sự thân thiện và ấm áp của người Việt đến nhà hàng.</p>
-        </article>
+
+    <div class="features-grid">
+        <div class="feature-item">
+            <i class="fa-solid fa-leaf"></i>
+            <h3>NGUYÊN LIỆU TƯƠI NGON</h3>
+            <p>Chọn lọc nguyên liệu tươi mỗi ngày, đảm bảo chất lượng và an toàn.</p>
+        </div>
+        <div class="feature-item">
+            <i class="fa-solid fa-bowl-food"></i>
+            <h3>CÔNG THỨC TRUYỀN THỐNG</h3>
+            <p>Giữ trọn hương vị Việt với công thức gia truyền.</p>
+        </div>
+        <div class="feature-item">
+            <i class="fa-solid fa-utensils"></i>
+            <h3>ĐẦU BẾP KINH NGHIỆM</h3>
+            <p>Đội ngũ đầu bếp nhiều năm kinh nghiệm, tận tâm trong từng món ăn.</p>
+        </div>
+        <div class="feature-item">
+            <i class="fa-regular fa-heart"></i>
+            <h3>PHỤC VỤ TẬN TÂM</h3>
+            <p>Không gian ấm cúng, phục vụ chu đáo như người thân.</p>
+        </div>
     </div>
 </section>
 
-<!-- MENU -->
-<section class="menu-section" id="menu">
-    <div class="section-heading">
-        <p class="section-label">MENU</p>
-        <h2>THỰC ĐƠN <span>2Q-PHỞ</span></h2>
-        <p>価格は税込表示です</p>
-    </div>
-
-    <!-- MENU TABS BILINGUAL -->
-    <div class="menu-tabs">
-        <button class="menu-tab active" data-category="food">
-            <strong>🍜 ĐỒ ĂN</strong>
-            <small>お料理</small>
-        </button>
-        <button class="menu-tab" data-category="set">
-            <strong>🍱 SET MENU</strong>
-            <small>セットメニュー</small>
-        </button>
-        <button class="menu-tab" data-category="drink">
-            <strong>🥤 ĐỒ UỐNG</strong>
-            <small>ドリンク</small>
-        </button>
-    </div>
-
-    <div class="menu-grid" id="menuGrid"></div>
-</section>
-
-<!-- SPACE -->
-<section class="space-section" id="space">
-    <div class="section-heading">
-        <p class="section-label">GALLERY</p>
-        <h2>KHÔNG GIAN <span>2Q-PHỞ</span></h2>
-        <p>ベトナムの温かさを感じる空間</p>
-    </div>
-    <div class="gallery-grid">
-        <div class="gallery-item gallery-large"><img src="images/restaurant-front.jpg" alt="Mặt tiền nhà hàng" loading="lazy"></div>
-        <div class="gallery-item"><img src="images/interior-01.jpg" alt="Không gian nhà hàng" loading="lazy"></div>
-        <div class="gallery-item"><img src="images/interior-02.jpg" alt="Không gian nhà hàng" loading="lazy"></div>
-        <div class="gallery-item"><img src="images/table-01.jpg" alt="Bàn ăn" loading="lazy"></div>
-        <div class="gallery-item"><img src="images/atmosphere-01.jpg" alt="Không khí nhà hàng" loading="lazy"></div>
-    </div>
-</section>
-
-<!-- RESERVATION -->
-<section class="reservation-section" id="reservation">
-    <div class="reservation-content">
-        <p class="section-label">ご予約</p>
-        <h2>HẸN BẠN<br><span>TẠI 2Q-PHỞ</span></h2>
-        <p>Hãy liên hệ với chúng tôi để đặt bàn hoặc trao đổi về các nhu cầu đặc biệt.</p>
-        <a href="mailto:2qphonumazu@gmail.com" class="btn btn-gold">GỬI EMAIL <span>→</span></a>
-    </div>
-</section>
-
-<!-- CONTACT -->
-<section class="contact-section" id="contact">
-    <div class="contact-content">
-        <p class="section-label">CONTACT</p>
-        <h2>LIÊN HỆ<br><span>2Q-PHỞ</span></h2>
-        <div class="gold-line"></div>
-
-        <div class="contact-item">
-            <div class="contact-icon">⌖</div>
-            <div>
-                <strong>ĐỊA CHỈ</strong>
-                <p>〒410-0801<br>静岡県沼津市大手町5-4-24</p>
-            </div>
-        </div>
-
-        <div class="contact-item">
-            <div class="contact-icon">◷</div>
-            <div>
-                <strong>GIỜ MỞ CỬA</strong>
-                <p>
-                    Thứ 2: 11:00–15:00 / 17:00–21:00<br>
-                    Thứ 3: 17:00–21:00<br>
-                    Thứ 4–Chủ nhật: 11:00–15:00 / 17:00–21:00<br>
-                    <small>※ 営業時間は変更になる場合があります</small>
-                </p>
-            </div>
-        </div>
-
-        <div class="contact-item">
-            <div class="contact-icon">@</div>
-            <div>
-                <strong>EMAIL</strong>
-                <p><a href="mailto:2qphonumazu@gmail.com">2qphonumazu@gmail.com</a></p>
-            </div>
-        </div>
-
-        <div class="contact-item">
-            <div class="contact-icon">◎</div>
-            <div>
-                <strong>SOCIAL MEDIA</strong>
-                <p>
-                    <a href="https://www.tiktok.com/@2qpho" target="_blank" rel="noopener">TikTok / 2qpho</a><br>
-                    <a href="https://www.facebook.com/2qphonumazu" target="_blank" rel="noopener">Facebook / 2qphonumazu</a>
-                </p>
-            </div>
-        </div>
-
-        <div class="contact-buttons">
-            <a href="mailto:2qphonumazu@gmail.com" class="btn btn-dark">EMAIL <span>↗</span></a>
-            <a href="https://www.facebook.com/2qphonumazu" target="_blank" class="btn btn-light">FACEBOOK <span>↗</span></a>
-            <a href="https://www.tiktok.com/@2qpho" target="_blank" class="btn btn-light">TIKTOK <span>↗</span></a>
-            <a href="https://www.google.com/maps/place/..." target="_blank" class="btn btn-dark">GOOGLE MAP <span>↗</span></a>
-        </div>
-    </div>
-    <div class="map-container">
-        <iframe src="https://www.google.com/maps?q=2Q%20PHO%20%E3%83%BB2Q%20%E3%83%95%E3%82%A9%E3%83%BC%20%E3%83%99%E3%83%88%E3%83%8A%E3%83%A0%E6%96%99%E7%90%86%E5%B0%82%E9%96%80%E5%BA%97%20%E6%B2%BC%E6%B4%A5&output=embed" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+<!-- RESERVATION SECTION -->
+<section class="reservation-banner" id="reservation">
+    <div class="res-content">
+        <h2>ĐẶT BÀN TRƯỚC<br>TRẢI NGHIỆM TRỌN VẸN</h2>
+        <p>Đặt bàn trước để không phải chờ đợi vào những giờ cao điểm!</p>
+        <a href="mailto:2qphonumazu@gmail.com" class="btn btn-gold">ĐẶT BÀN NGAY <i class="fa-solid fa-arrow-right"></i></a>
     </div>
 </section>
 
 </main>
 
 <!-- FOOTER -->
-<footer class="footer">
-    <div class="footer-main">
+<footer class="footer" id="contact">
+    <div class="footer-container">
         <div class="footer-brand">
-            <div class="footer-logo">2Q-PHỞ</div>
-            <div class="footer-japanese">ベトナム料理店 フォー</div>
-            <p>Hương vị Việt Nam chân thật<br>tại Numazu, Shizuoka.</p>
+            <a href="#home" class="logo">
+                <div class="logo-mark"><span>2Q</span></div>
+                <div class="logo-text">
+                    <strong>2Q-PHỞ</strong>
+                    <small>ベトナム料理店 フォー</small>
+                </div>
+            </a>
+            <p>Hương vị Việt Nam chân thật và tinh tế giữa lòng Nhật Bản.</p>
         </div>
-        <div class="footer-column">
-            <h4>NAVIGATION</h4>
-            <a href="#home">Trang chủ</a>
+
+        <div class="footer-links">
+            <h4>THÔNG TIN</h4>
             <a href="#about">Giới thiệu</a>
             <a href="#menu">Thực đơn</a>
-            <a href="#space">Không gian</a>
-            <a href="#contact">Liên hệ</a>
+            <a href="#menu">Đồ uống</a>
         </div>
-        <div class="footer-column">
-            <h4>FOLLOW US</h4>
-            <a href="https://www.tiktok.com/@2qpho" target="_blank">TikTok / 2qpho</a>
-            <a href="https://www.facebook.com/2qphonumazu" target="_blank">Facebook / 2qphonumazu</a>
-            <a href="mailto:2qphonumazu@gmail.com">2qphonumazu@gmail.com</a>
+
+        <div class="footer-contact">
+            <h4>LIÊN HỆ</h4>
+            <p><i class="fa-solid fa-location-dot"></i> 〒410-0801 Shizuoka, Numazu-shi, Otemachi 5-4-24</p>
+            <p><i class="fa-regular fa-clock"></i> T2, T4-CN: 11:00-15:00 / 17:00-21:00</p>
+            <p><i class="fa-regular fa-clock"></i> T3: 17:00-21:00</p>
+            <p><i class="fa-solid fa-envelope"></i> 2qphonumazu@gmail.com</p>
         </div>
-        <div class="footer-column">
-            <h4>LOCATION</h4>
-            <p>沼津市大手町<br>静岡県</p>
-            <a href="https://www.google.com/maps/place/..." target="_blank">Google Maps →</a>
+
+        <div class="footer-social">
+            <h4>THEO DÕI CHÚNG TÔI</h4>
+            <div class="f-socials">
+                <a href="https://www.facebook.com/2qphonumazu" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.tiktok.com/@2qpho" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
         </div>
     </div>
     <div class="footer-bottom">
-        © 2026 2Q-PHỞ ベトナム料理店 フォー
+        <p>© 2026 2Q-PHỞ ベトナム料理店 フォー. All rights reserved.</p>
     </div>
 </footer>
 
